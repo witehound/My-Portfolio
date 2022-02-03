@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nwaide Emmanuel</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logos/a-m-logo.png" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main>
+      <!-- Start About Section -->
+      <section id="section1" data-nav="About" class="your-active-class">
+        <div class="landing__container">
+          <div class="flex__container">
+            <div class="about__info">
+              <div class="about__intro">
+                <div class="about__intro__detail">
+                  <p class="about__greeting">Hello!</p>
+                  <h1 class="about__name"><span>I'm</span> Nwaide Emmanuel</h1>
+                  <p class="about__job-title">Front-end Engineer</p>
+                </div>
+              </div>
+
+              <p class="about__description">
+                Passionate about great technologies in Front-end Development.
+                Eagerness to learn new technologies. Dedicated, Dependable and
+                positive team member who has strong technical, communication.
+              </p>
+
+              <div class="contact-links">
+                <a
+                  class="btn linkedin__link"
+                  href="https://www.linkedin.com/in/emmanuel-nwaide-123456226/"
+                  target="_blank"
+                  >Linkedin</a
+                >
+                <a
+                  class="btn github__link"
+                  href="https://github.com/witehound"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+
+              <a
+                class="btn resume__link"
+                href="https://drive.google.com/file/d/1EVIFJE-rwqa_H9F4vPNC2LALcwi78egN/view?usp=sharing"
+                target="_blank"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- Start Skills Section -->
+      <section id="section2" data-nav="Skills">
+        <div class="landing__container">
+          <h2>Skills</h2>
+
+          <div class="flex__container">
+            <div class="skill">
+              <img src="assets/logos/html5.svg" alt="" />
+              <p>HTML</p>
+            </div>
+
+            <div class="skill">
+              <img src="assets/logos/css3.svg" alt="" />
+              <p>CSS</p>
+            </div>
+
+            <div class="skill">
+              <img src="assets/logos/javascript.svg" alt="" />
+              <p>JavaScript</p>
+            </div>
+
+            <div class="skill">
+              <img src="assets/logos/typescript.svg" alt="" />
+              <p>TypeScript</p>
+            </div>
+
+            <div class="skill">
+              <img src="assets/logos/angular.svg" alt="" />
+              <p>React</p>
+            </div>
+
+            <div class="skill">
+              <img src="assets/logos/sass.svg" alt="" />
+              <p>Sass - SCSS</p>
+            </div>
+
+            <div class="skill">
+              <img src="assets/logos/bootstrap.svg" alt="" />
+              <p>Bootstrap</p>
+            </div>
+
+            <div class="skill">
+              <img src="assets/logos/tailwindcss.svg" alt="" />
+              <p>Tailwind CSS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- Start Projects Section -->
+      <section id="section3" data-nav="Projects">
+        <div class="landing__container">
+          <h2>Projects</h2>
+          <div class="flex__container">
+            <div class="project">
+              <a
+                href="https://clipboard-landing-page-amber-five.vercel.app/"
+                target="_blank"
+                class="project-demo__link"
+              >
+                <img src="assets/img/project1.png" alt="project 1" />
+              </a>
+              <p>mynftpreviews</p>
+
+              <div class="project__links">
+                <a
+                  href="https://github.com/witehound/mynftpreviews"
+                  target="_blank"
+                  class="btn github__link"
+                  >Github</a
+                >
+
+                <a
+                  href="https://vibrant-cray-6fe9f1.netlify.app"
+                  target="_blank"
+                  class="btn demo__link"
+                  >Demo</a
+                >
+              </div>
+            </div>
+
+            <div class="project">
+              <a
+                href="https://responsiv-landing-page-asmaamk.vercel.app/"
+                target="_blank"
+                class="project-demo__link"
+              >
+                <img src="assets/img/project2.png" alt="project 2" />
+              </a>
+              <p>flareARB</p>
+
+              <div class="project__links">
+                <a
+                  href="https://github.com/witehound/flareARB"
+                  target="_blank"
+                  class="btn github__link"
+                  >Github</a
+                >
+
+                <a
+                  href="https://laughing-dijkstra-066323.netlify.app/"
+                  target="_blank"
+                  class="btn demo__link"
+                  >Demo</a
+                >
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+      </section>
+      <!-- End Projects Section -->
+
+      <!-- Start Contact Me Section -->
+      <section id="section4" data-nav="Contact Me">
+        <div class="landing__container">
+          <h2>Contact Me</h2>
+          <div class="flex__container">
+            <form action="https://formspree.io" method="POST">
+              <div class="name-field">
+                <input type="text" id="name" name="Name" value="" required />
+                <label for="name">Name</label>
+              </div>
+              <input
+                type="text"
+                name="Subject"
+                value="Contact Me form"
+                style="display: none"
+              />
+              <div class="email-field">
+                <input type="email" id="email" name="Email" value="" required />
+                <label for="email">Email</label>
+              </div>
+              <div class="message-field">
+                <textarea
+                  id="message"
+                  name="Message"
+                  value=""
+                  required
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button class="btn submit__btn" id="submitbtn" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Me Section -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer class="page__footer">
+      <p>&Nwaide Emmanuel2022</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
